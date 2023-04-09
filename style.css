@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ecf0f3;
+    font-family: 'Poppins',sans-serif;
+    outline: none;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    padding: 5px 10px;
+    color: #fff;
+    background: none;
+}
+
+.calculator{
+    background-color: #28343f;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #897979,
+                      5px 5px 12px rgba(0,0,0,0.16);
+    display: grid;
+    grid-template-columns: repeat(4,70px);
+}
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background-color: #32e951;
+    box-shadow: inset -5px -5px 12px #888686,
+                inset 5px 5px 12px rgba(0,0,0,0.16);
+    font-weight: 500;
+    font-size: 45px;
+    border: none;
+    border-radius: 20px;
+    color: rgb(70,70,70);
+    text-align: end;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+button{
+    height: 48px;
+    width: 48px;
+    background-color: #28343f;
+    box-shadow: inset 5px 5px 12px #41586a,
+                      5px 5px 12px rgba(0,0,0,0.16);
+    border: none;
+    border-radius: 50%;
+    color: #ecf0f3;
+    margin: 8px;
+    font-size: 16px;
+}
+
+.equal{
+    width: 3.8rem;
+    border-radius: 60px;
+    margin-left: -0.09px;
+    background-color: #32b8e9;
+    box-shadow: inset 5px 5px 12px #51878f,
+                      5px 5px 12px rgba(0,0,0,0.16);
+}
+
+.plus{
+    grid-row: span 4;    
+    height: 7rem;
+    border-radius: 10px;
+    background-color: #32e951;
+    box-shadow: inset 5px 5px 12px #479061,
+                      5px 5px 12px rgba(0,0,0,0.16);
+} 
+
+.delete{
+    background-color: #dd2b2b;
+    box-shadow: inset 5px 5px 12px #904b47,
+                      5px 5px 12px rgba(0,0,0,0.16);
+}
+
+.clear{
+    background-color: #dde932;
+    box-shadow: inset 5px 5px 12px #899047,
+                      5px 5px 12px rgba(0,0,0,0.16);
+    color: #28343f;
+}
