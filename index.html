@@ -12,7 +12,11 @@
     
     <div class="container">
         <div class="calculator">
-            <h3 class="heading"> JS -> Calculator</h3>
+            <div class="heading">
+                <div class="heading-title"><h3 style="background: none;">Calculator</h3></div>
+                <span class="mode" id="mode" style="background:none;color:white;margin-left: 25px;">Light :</span>
+                <div class="toggle-bar"></div>
+            </div>
             <input type="text" placeholder="0" id="output-screen">
             <button onclick="Clear()" class="clear">CE</button>
             <button onclick="Del()" class="delete">DEL</button>
